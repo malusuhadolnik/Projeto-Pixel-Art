@@ -1,12 +1,43 @@
 body {
-   background-color: rgb(253, 251, 251);
-    font-family: Roboto; sans-serif;
-    line-height: 25px;
-    margin-left: 20px;
-    margin-right: 20px;  
+  background-color: rgb(253, 251, 251);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 header {
-    text-align: center;
     width: 100%;
-  }
+}
+
+main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color-palette{
+    width: 1000px;
+    height: 100px;
+}
+
+.color {
+    display: inline-block;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+#corPreta {
+    background-color: black;
+}
+
+#cor1 {
+    background-color: cyan;
+}
+
+#cor2 {
+    background-color: magenta;
+}
+
+#cor3 {
+    background-color: yellow;
+}
