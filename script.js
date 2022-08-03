@@ -19,3 +19,10 @@ function createGridLine(numPixels){
 }
 createGridLine(5);
 
+function selectColor(corSelecionada){
+  selecao = document.getElementById(corSelecionada);
+  selecao.classList.add("select");
+}
+
+selectColor("corPreta");
+
