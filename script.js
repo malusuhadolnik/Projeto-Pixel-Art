@@ -1,6 +1,7 @@
 
 //window.onload = function() {}
 
+//Requisito 4
 function createGridLine(numPixels){
   let grid = document.querySelector("#pixel-board"); 
   for (let index = 1; index<= numPixels; index++) { 
@@ -19,13 +20,14 @@ function createGridLine(numPixels){
 }
 createGridLine(5);
 
-//Requisito 7
+//Requisito 6
 function selectColor(corSelecionada){
   selecao = document.getElementById(corSelecionada);
   selecao.classList.add("selected");
 }
 selectColor("corPreta");
 
+//Requisito 7
 let pegaPalette = document.querySelector("#color-palette");
 let pegaCores = document.querySelectorAll(".color");
 
@@ -44,21 +46,49 @@ for (let index = 0; index < pegaCores.length; index ++){
 }
 
 //requisito 8
-//O pixel do quadro clicado deve ter sua cor alterada para a cor selecionada na paleta de cores (exercício anterior)
-//Vamos pegar a cor do background da cor selecionada e armazenar em uma nova variável
-// function colorePixel(){;
 let pixelsAColorir = document.querySelector("#pixel-board"); //Pega a div do pixelboard
 
 function colorePixel(event) {  //função para estabelecer o que acontece quando o evento é acionado
   let divSelected = document.querySelector(".selected"); //pega a div com a classe selected;
   let corSelecionada = window.getComputedStyle(divSelected).backgroundColor; //pega a cor do background
 
-  let quadroDePixels = event.target;
-  quadroDePixels.style.backgroundColor = corSelecionada;
+  let quadroDePixels = event.target; //o alvo do nosso evento é a variável quadro de pixels
+  quadroDePixels.style.backgroundColor = corSelecionada; //mudamos a cor do nosso alvo :)
   }
  
  pixelsAColorir.addEventListener('click', colorePixel); //estabelece que, ao clicar, a função de colorir pixels é chamada
  
+//Requisito 9
+function addCleanButton(){
+  let placeButton = document.querySelector(".buttons-container"); //define onde o botãovai entrar
+  
+  let botao = document.createElement("button"); //cria o botão
+  botao.innerHTML = "Limpar";
+  botao.setAttribute("id", "clear-board"); //adiciona a id clear-board
+
+  placeButton.appendChild(botao); //anexa o novo elemento ao local escolhido
+};
+
+addCleanButton();
+
+function cleanPixelBoard (){
+//ao clicar no botão Limpar, a cor de fundo do pixel-board deve ser branca
+ let getCleanButton = document.querySelector(".buttons-container");
+ console.log(getCleanButton);
+ let getPixels = document.querySelectorAll(".pixel");
+ console.log(getPixels);
+ let quadroLimpo = "white";
+
+ getCleanButton.addEventListener("click", function(){
+  for (let index =0; index < getPixels.length; index++){
+    if (getPixels[index].style.backgroundColor !== quadroLimpo){
+      getPixels[index].style.backgroundColor = quadroLimpo;
+    }
+  }
+ });
+}
+cleanPixelBoard();
+
 
 
 
