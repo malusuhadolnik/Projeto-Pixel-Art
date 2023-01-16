@@ -8,7 +8,7 @@ Este projeto consiste em um editor de arte com pixels, em que a pessoa usuária 
 
 Arquivos desenvolvidos por mim: index.html; script.js; style.css
 
-Os demais foram desenvolvidos pelo time da Trybe
+Os demais foram desenvolvidos pelo time da Trybe.
 
 # Como funciona
 1. Clique em cima de uma das quatro cores da paleta;
@@ -18,7 +18,7 @@ Os demais foram desenvolvidos pelo time da Trybe
 
 ## Técnologias usadas
 
-> Front-end desenvolvido usando: CSS3, HTML5, Javascript
+Front-end desenvolvido usando: CSS3, HTML5, Javascript.
 
 ## Instalando Dependências
 
