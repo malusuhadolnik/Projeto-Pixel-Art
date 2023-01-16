@@ -1,13 +1,36 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Projeto Pixel Art
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Sobre
+Este projeto foi desenvolvido durante o Módulo 1 - Fundamentos do curso de Desenvolvimento Web da Trybe. 
+
+Este projeto consiste em um editor de arte com pixels, em que a pessoa usuária poderá escolher uma cor em uma paleta de cores e poderá pintar o que quiser em um quadro branco.
+
+Arquivos desenvolvidos por mim: index.html; script.js; style.css
+
+Os demais foram desenvolvidos pelo time da Trybe
+
+# Como funciona
+1. Clique em cima de uma das quatro cores da paleta;
+2. Em seguida, clique em cima de um dos quadrados em branco da grade para pintá-la com a cor selecionada;
+3. Faça uma linda obra de arte!
+
+
+## Técnologias usadas
+
+Front-end:
+> Desenvolvido usando: CSS3, HTML5, Javascript
+
+## Instalando Dependências
+
+> Frontend
+```bash
+cd src/
+npm install
+``` 
+
+## Executando aplicação
+
+  ```
+    cd src/ && npm start
+  ```
