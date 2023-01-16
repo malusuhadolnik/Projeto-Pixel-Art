@@ -18,12 +18,10 @@ Os demais foram desenvolvidos pelo time da Trybe
 
 ## Técnologias usadas
 
-Front-end:
-> Desenvolvido usando: CSS3, HTML5, Javascript
+> Front-end desenvolvido usando: CSS3, HTML5, Javascript
 
 ## Instalando Dependências
 
-> Frontend
 ```bash
 cd src/
 npm install
